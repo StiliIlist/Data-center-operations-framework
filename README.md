@@ -1,6 +1,7 @@
 # Data Center Operations Framework
 
 ## Overview
+
 This project demonstrates an end-to-end operations system for managing data center environments using a structured, KPI-driven approach.
 
 It is designed to reflect how high-performing operations teams ensure uptime, manage risk, optimize capacity, and maintain audit-ready systems.
@@ -8,9 +9,11 @@ It is designed to reflect how high-performing operations teams ensure uptime, ma
 ---
 
 ## Why This Project
+
 This project showcases how operational systems can be designed—not improvised—to manage complex environments.
 
 It reflects a real-world approach where:
+
 - Performance is measurable
 - Processes are repeatable
 - Systems are monitored continuously
@@ -19,19 +22,21 @@ It reflects a real-world approach where:
 ---
 
 ## Operating Philosophy
+
 Operate the data center like a production system:
 
-- Measurable  
-- Repeatable  
-- Monitored  
-- Preventive  
-- Continuously improved  
+- Measurable
+- Repeatable
+- Monitored
+- Preventive
+- Continuously improved
 
 ---
 
 ## Core Framework (5 Pillars)
 
 ### 1. Infrastructure Reliability
+
 Ensures uptime, redundancy, and system stability.
 
 **KPIs:**
@@ -42,6 +47,7 @@ Ensures uptime, redundancy, and system stability.
 ---
 
 ### 2. Capacity & Resource Planning
+
 Optimizes rack space, power, and cooling usage.
 
 **KPIs:**
@@ -53,6 +59,7 @@ Optimizes rack space, power, and cooling usage.
 ---
 
 ### 3. Incident Management
+
 Structured response to minimize downtime and prevent recurrence.
 
 **Process:**
@@ -67,6 +74,7 @@ Detect → Alert → Respond → Resolve → RCA → Prevent
 ---
 
 ### 4. Compliance & Risk Control
+
 Maintains audit readiness and operational integrity.
 
 **Controls:**
@@ -78,6 +86,7 @@ Maintains audit readiness and operational integrity.
 ---
 
 ### 5. Workflow Optimization & Automation
+
 Improves efficiency and reduces manual operations.
 
 **KPIs:**
@@ -95,6 +104,7 @@ The data center operates as a closed-loop system:
 Monitoring → Detection → Response → Resolution → Analysis → Prevention
 
 Every incident feeds back into:
+
 - Preventive maintenance
 - Process improvement
 - KPI optimization
@@ -103,37 +113,59 @@ Every incident feeds back into:
 
 ## Dashboard (Operational Visibility)
 
-This project includes a KPI dashboard designed to simulate real-world monitoring and executive reporting.
+This project includes an Excel-based KPI dashboard (`dashboard/data_center_operations_dashboard.xlsx`) designed to simulate real-world monitoring and executive reporting across six sheets:
 
-**Key metrics tracked:**
-- Uptime %
-- MTTR
-- MTBF
-- SLA compliance %
-- Rack utilization
-- Power and cooling usage
+| Sheet | Contents |
+|---|---|
+| Dashboard | Executive KPI tiles, operational summary, capacity by zone, trend table |
+| KPI_Tracker | Monthly KPI data — uptime, MTTR, MTBF, SLA compliance, PM completion |
+| Incident_Log | Full incident history with TTA, TTR, root cause, and preventive action |
+| Capacity | Zone-level rack, power, and cooling utilization with dynamic risk flags |
+| PM_Checklist | Preventive maintenance tasks with live completion rate formula |
+| Lists | Dropdown validation lists for data entry consistency |
 
-The dashboard transforms operational data into actionable insights for decision-making.
+Dashboard metric definitions and visual requirements are documented in `dashboard/dashboard_metric_definitions.md`.
 
 ---
 
 ## Project Structure
 
-data/ → Sample operational data (incidents, KPIs)
-dashboard/ → KPI dashboard and reporting logic
-docs/ → Operating model, scenarios, case study, executive layer
-templates/ → Incident, RCA, and maintenance templates
+```
+data/
+  incident_log_sample.csv       → Sample incident records with severity, zone, TTR, root cause
+  kpi_tracker_sample.csv        → Monthly KPI data across all tracked metrics
 
+dashboard/
+  dashboard_metric_definitions.md   → Dashboard requirements, sections, visuals, and filters
+  data_center_operations_dashboard.xlsx → Live Excel KPI dashboard (6 sheets)
+
+docs/
+  case_study.md                 → Full implementation case study with simulated results
+  executive_summary.md          → Leadership-facing performance summary template
+  incident-scenarios.md         → Three worked incident scenarios (cooling, power, network)
+  interview_positioning.md      → 60-second answer, skills demonstrated, closing line
+  operating_model.md            → Core roles, daily workflow, escalation matrix
+  system_overview.md            → Closed-loop system model and workflow diagram
+
+templates/
+  incident_report_template.md       → Structured incident report with all required fields
+  preventive_maintenance_checklist.md → Daily, weekly, and monthly maintenance checks
+  root_cause_analysis_template.md   → RCA framework with timeline, corrective actions, verification
+```
 
 ---
 
 ## Key Deliverables
-- Incident tracking system  
-- Root Cause Analysis (RCA) framework  
-- Preventive maintenance checklist  
-- KPI tracking model  
-- Executive reporting structure  
-- Capacity tracking system  
+
+- Excel KPI dashboard with live formulas across 6 sheets
+- Incident tracking system with severity, zone, and time metrics
+- Root Cause Analysis (RCA) framework
+- Preventive maintenance checklist (daily / weekly / monthly)
+- KPI tracking model (uptime, MTTR, MTBF, SLA, PM completion)
+- Executive reporting structure
+- Capacity tracking system with dynamic risk flagging
+- Worked incident scenarios (cooling failure, power fluctuation, network latency)
+- Interview positioning guide
 
 ---
 
@@ -141,54 +173,57 @@ templates/ → Incident, RCA, and maintenance templates
 
 A cooling failure in one zone triggers a monitoring alert.
 
-- Alert is acknowledged  
-- Workload is redistributed  
-- Technician is dispatched  
-- Issue is resolved  
+- Alert is acknowledged
+- Workload is redistributed
+- Technician is dispatched
+- Issue is resolved
 
 Root cause analysis identifies airflow obstruction.
 
 A preventive inspection process is implemented to eliminate recurrence.
 
+See `docs/incident-scenarios.md` for three fully worked examples.
+
 ---
 
 ## Case Study
 
-This project includes a full case study demonstrating:
+This project includes a full case study (`docs/case_study.md`) demonstrating:
 
-- Implementation of a structured operations framework  
-- Development of KPI dashboard and reporting  
-- Standardization of incident management  
-- Introduction of preventive maintenance cycles  
+- Implementation of a structured operations framework
+- Development of KPI dashboard and reporting
+- Standardization of incident management
+- Introduction of preventive maintenance cycles
 
 **Simulated Results:**
-- MTTR reduced by 30%  
-- Repeat incidents reduced by 40%  
-- SLA compliance improved to 98%  
-- Preventive maintenance completion increased to 99%  
+- MTTR reduced by 30%
+- Repeat incidents reduced by 40%
+- SLA compliance improved to 98%
+- Preventive maintenance completion increased to 99%
 
 ---
 
 ## Skills Demonstrated
-- Operations leadership  
-- Incident response management  
-- KPI design and tracking  
-- Capacity planning  
-- Risk and compliance control  
-- Process improvement  
-- Dashboard development  
-- Systems thinking  
+
+- Operations leadership
+- Incident response management
+- KPI design and tracking
+- Capacity planning
+- Risk and compliance control
+- Process improvement
+- Dashboard development
+- Systems thinking
 
 ---
 
 ## Interview Positioning
 
-“I approach data center operations as a production system where every process is measurable, repeatable, and continuously improved. I focus on reliability, structured incident response, capacity optimization, and building systems that prevent issues before they occur.”
+> "I approach data center operations as a production system where every process is measurable, repeatable, and continuously improved. I focus on reliability, structured incident response, capacity optimization, and building systems that prevent issues before they occur."
+
+Full interview guide including 60-second answer, skills breakdown, and closing line: `docs/interview_positioning.md`
 
 ---
 
 ## Author
+
 Built by an operations leader with experience in production systems, inventory control, compliance, and workflow optimization, transitioning these principles into data center and infrastructure operations.
-
-
-
