@@ -1,0 +1,14 @@
+# Dashboard Metric Definitions
+
+| Metric | Definition | Target Example |
+|---|---|---:|
+| Uptime % | Percentage of time systems are operational | 99.9%+ |
+| MTTR | Average time to resolve incidents | < 60 min |
+| MTBF | Average time between failures | Increasing trend |
+| SLA Compliance % | Percentage of tickets resolved within SLA | 95%+ |
+| Rack Utilization % | Used rack capacity divided by total capacity | 70-85% |
+| Power Utilization % | Used power divided by available power | < 80% |
+| Cooling Utilization % | Used cooling capacity divided by available cooling capacity | < 80% |
+| Repeat Incident Rate | Incidents repeated within defined period | Decreasing trend |
+| PM Completion % | Completed preventive maintenance tasks divided by planned tasks | 98%+ |
+| Open Risk Items | Active unresolved risk items | Decreasing trend |
