@@ -71,5 +71,20 @@ Reduce manual work and improve operational efficiency.
 - Cost per rack
 
 ---
+## Dashboard (Operational Visibility)
+
+This project includes a KPI dashboard designed to simulate real-world data center monitoring and executive reporting.
+
+**Key metrics tracked:**
+- Uptime %
+- MTTR (Mean Time to Repair)
+- MTBF (Mean Time Between Failures)
+- SLA compliance %
+- Rack utilization
+- Power and cooling usage
+
+The dashboard provides a centralized view of operational health, incident trends, and capacity utilization.
+
+It demonstrates how raw operational data can be transformed into actionable insights for decision-making.
 
 ## Project Structure
