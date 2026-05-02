@@ -1,0 +1,5 @@
+Month,Uptime %,MTTR (Min),MTBF (Hours),SLA Compliance %,PM Completion %,Repeat Incident Rate %,Open Risk Items
+2026-01,99.91,75,720,94.0,96.0,8.0,6
+2026-02,99.94,62,810,96.0,97.0,6.0,5
+2026-03,99.96,54,900,97.0,98.0,4.0,4
+2026-04,99.97,48,980,98.0,99.0,3.0,3
