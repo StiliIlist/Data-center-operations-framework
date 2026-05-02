@@ -1,6 +1,0 @@
-Incident_ID,Date,Severity,Zone,System,Issue,Detected_By,Time_To_Acknowledge_Min,Time_To_Resolve_Min,Root_Cause,Preventive_Action,Status
-INC-001,2026-01-05,Sev 2,Zone A,Cooling,Temperature above threshold,Monitoring Alert,8,55,Blocked airflow panel,Add weekly airflow inspection,Closed
-INC-002,2026-01-12,Sev 3,Zone C,Power,UPS battery warning,Technician Check,20,180,Battery degradation,Replace battery and add monthly test,Closed
-INC-003,2026-01-19,Sev 2,Zone B,Network,Switch packet loss,Monitoring Alert,10,75,Firmware issue,Schedule firmware review cycle,Closed
-INC-004,2026-01-26,Sev 4,Zone D,Security,Access badge error,Access Log,45,120,Expired badge profile,Monthly access review,Closed
-INC-005,2026-02-02,Sev 3,Zone A,Cooling,Humidity out of range,Monitoring Alert,15,95,Sensor calibration drift,Quarterly sensor calibration,Closed
